@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Happy 19th birthday</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Fuentes para las tarjetas -->
+    <!-- Blanco -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet">
+    <!-- Negro -->
+    <link href="https://fonts.googleapis.com/css2?family=Life+Savers:wght@400;700;800&display=swap" rel="stylesheet">
+    <!-- Azul -->
+    <link href="https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Pantalla inicial -->
+    <div id="main-screen">
+        <h1 id="main-title">Happy 19th birthday</h1>
+        <img id="main-image" src="https://i.imgur.com/oMlRXTo.jpeg" alt="Birthday Image" />
+        
+        <!-- Calculadora -->
+        <div id="calculator">
+            <input type="text" id="calc-display" disabled />
+            <div class="calc-buttons">
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>+</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>-</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>*</button>
+                <button>0</button>
+                <button>AC</button>
+                <button>=</button>
+                <button>/</button>
+            </div>
+        </div>
+
+        <!-- Botones de opciones (ocultos al inicio) -->
+        <div id="options" class="hidden">
+            <button id="btn-white">A) Blanco</button>
+            <button id="btn-black">B) Negro</button>
+            <button id="btn-blue">C) Azul</button>
+        </div>
+    </div>
+
+    <!-- Tarjetas -->
+    <div id="card-white" class="card hidden">
+        <audio id="audio-white" src="https://www.dropbox.com/scl/fi/r0f574gitupg2dxuwehmz/I-Wanna-Be-Yours.mp3?rlkey=fl4qawaip2xr406c4t8rtyjd2&st=o7qamr29&dl=1" loop></audio>
+        <h2 class="tagesschrift-regular">Love</h2>
+        <p class="tagesschrift-regular small">Esto que escribo no es para algo mal ,al contrario quiero que te des cuenta de varias cosas,desde que te conozco has sido una persona tan especial para mí.y que eres de las pocas persona a la cual puedo llamar con seguridad mi mujer.</p>
+        <p class="tagesschrift-regular small">Tu siempre me sacas una sonrisa aún en días donde pienso que te estreso mucho Y te siento cansada de la vida ❤️</p>
+        <button id="note-button">nota ábreme</button>
+
+        <div id="mini-note" class="hidden">
+            <img src="https://media.tenor.com/FOipwendSb4AAAAm/hello-kitty-donut-hello-kitty.webp" alt="Hello Kitty GIF">
+            <p class="tagesschrift-regular">Nota: quiero que te alimentes bien estos días me has preocupado mucho con respecto a tu alimentación no quiero tenerte 3 meses en el hospital :c</p>
+            <button id="close-note">Cerrar</button>
+        </div>
+
+        <h3 class="tagesschrift-regular medium">Recuerdos</h3>
+        <p class="tagesschrift-regular small"><strong style="color: yellow; text-shadow: 0 0 5px purple;">La primera vez que nos conocimos</strong></p>
+        <p class="tagesschrift-regular small">Todo comenzó un 8 de agosto del 2024
+Te conocí en una sala de isla social eso del rededor de las 9pm te pedí tu número y te escribí al WhatsApp aquí fue donde envié el primer mensaje donde comenzaría todo a las 11:14pm : "Patty soy yo XD" y tu me respondiste "la mismísima",aquí sin saber que después de eso pasarían más de 10 meses y ahora eres la persona más cercana a mi aunque estés lejos,nunca olvidaré lo bien que me trataste cuando yo tenía otro pensamiento sobre l@s chilen@s pero tu eri única cabe aclarar sjjsjaja.</p>
+        <p class="tagesschrift-regular small">Un dato muy curioso de nuestro encuentro o mejor dicho los primeros días que nos estábamos conociendo ,fue que yo estaba decidido a cambiar mi vocabulario solo para caerte mejor ,no se por que hasta ahora sigue siendo un misterio hasta para mi pero tengo seguro que solo fue para caerte mejor WUSHAJAJA.</p>
+        <h3 class="tagesschrift-regular medium">PELEAS</h3>
+        <p class="tagesschrift-regular small">Aunque no es muy recurrente o seguido que hayamos tenido alguna pelea nunca queda de mal recordar las veces que te enojaste conmigo por webeos o que te haya molestado mucho al principio no entendía que cosas te hacían enojar y que no obviamente como principio de toda amistad nunca habrán molestias pero con el tiempo si y yo que pase a ser solo un "conocido" ahora cualquier cosa que salga de mi boca puede ser usada en mi contra ,para recibir bullying o que me putees y me hagas reflexionar.Te quiero por corregirme ❣️.</p>
+
+        <h3 class="tagesschrift-regular medium" style="color: pink; text-shadow: 0 0 5px white;">TIEMPO QUE LLEVO ENAMORADO DE TI</h3>
+        <div id="love-counter" class="tagesschrift-regular small"></div>
+        <p class="tagesschrift-regular small">Este es el tiempo exacto desde que empeze a sentir cosas por ti ,exacto desde que te pusiste mi inicial en tus tetas y en el culo ,desde ahí no te eh sacado de mente hasta el día de hoy.y sabes tampoco quiero por qué te amo. y como dice la cancion quiero ser tuyo bb </p>
+        <button class="back-button">Cerrar</button>
+    </div>
+
+    <div id="card-black" class="card hidden">
+        <audio id="audio-black" src="https://www.dropbox.com/scl/fi/2fhe38qnh64irpe7xg4gl/Sad-Girl-1.mp3?rlkey=6ggbiwaug6ezupk6kcxketfzx&st=zwv4r2jy&dl=1" loop></audio>
+        <h2 class="life-savers-bold">Tu y tu privacidad</h2>
+        <p class="life-savers-regular small">Sé que muchas veces tocar esta parte será como una espada de doble filo no quiero meter mis narices donde no me llamaron pero sé que debo hacerlo si dije algo mal o que no es cierto pido una disculpas y tienes el permiso completo de putearme o decirme de todo entendido ?,con el poco tiempo que te conozco puedo decir que eres una persona que ama a su manera aunque el mundo no te entienda como eres yo sé que quiero entenderte como eres por qué eres una niña única que lo único que quiere es vivir en paz y no tener que sonar intensa o impaciente ,al no conocer muy bien tu pasado no se por lo mucho que tuviste que pasar y con el tiempo romperte poco a poco,ante todo espero poder sanar poco a poco esas heridas que tienes ,por que me da mucha pena y tristeza saber que por culpa de algo o alguien tenga que pasar malos ratos y no solo el pasado si no que también actualmente a esta edad no estás para pasar por estas cosas y se que tratas de minimizar las cosas y no darle mucha importancia y a lo que tú llamarías "llorar hasta dormir" el acumular estrés no es bueno sabes aveces no esta mal desahogarte que te escuche ,no es por sonar apresurado pero sabes que siempre estaré aquí para ti ,para escucharte apoyarte ,acosenjarte o hacerte sentir que no estás sola y que nunca te dejare sola mi terroncito de azúcar.ahora tu sabiendo este punto me gustaría felicitarte por lo mucho que te has esforzado estos 19 años largos de tu vida se que no fue fácil pero mirate estás en la universidad y pronto generaras plata para darte tus gustos, venga cachetona échale ganas que el camino será largo pero será más rápido mientras yo esté aqui contigo sabiendo que tú cumples con todos tus deberes,felicitarte por no estallar con las personas (obviamente pondremos aparte las personas que te caen hasta al piko que me contaste) fuera de eso sabes que eres una persona que puede controlarse y no hacer las cosas por impulso jajajaja y por último felicitarte por todo tu empeño y logros que has alcanzado en tus 19 años viva desde el más mínimo hasta el más grande.eres la mejor sabes sigue sacando una sonrisa de vez en cuando corazón ❤️
+     </p>
+        <button class="back-button">Cerrar</button>
+    </div>
+
+    <div id="card-blue" class="card hidden">
+        <audio id="audio-blue" src="https://www.dropbox.com/scl/fi/bt5gkvzvsg1thmx8ua2vi/Two-Feet-Love-is-a-Bitch.mp3?rlkey=fnao482541dc3dhiel4iw929a&st=c2antbo4&dl=1" loop></audio>
+        <h2 class="sue-ellen-francisco-regular">Tu y yo</h2>
+        <p class="sue-ellen-francisco-regular small">Sé que entre tú y yo las cosas han sido genial yo Tuve la gran oportunidad de conocerte tanto como tú a mí hasta ya sabes mis debilidades y que es lo que me gusta y yo se las tuyas,aunque entre tú y yo ya queda en difinicion temporal nuestra relación sigue siendo "especial" hasta el día de hoy aunque,yo no me quejaria si esto sigue progresando es evidente que por tu uni tu tiempo es muy limitado con el teléfono pero aún así yo esperaría recuerda que todo irá progresivamente no hay apuro.pero aveces me gustaría poder decirte las cosas como debería ser sin limitaciones aún tengo muchas cosas que decirte y hacerte sentir yo sé que en varias ocasiones te deje rojita o nerviosa no lo puedes negar al igual tu también me dejaste así al final de cuentas nos desquitamos por las noches pero desde que llegó Lily es como si fuera nuestra hija y no nos deja hacer nada :c sobre todo a ti que no te puedo decirte nada que luego te me calientas y te enojas por q te provocó y no te puedes hacer nada JSJSJAJA por eso ando calmado últimamente no quiero que pienses que es por q me aburri de ti o otras cosas niña no es nada de eso ,solo es que respeto a la Lily y tú me dejaste eso en claro niña que ya no podrías hacerte nada y con lo de hace poco que te hiciste una por estrés JSJAJAJA me sorprendiste enserio tonta espero haberte cruzado por la mente más de una vez con tus fetiches de querer hacerme gemir tu nombre mientras tú saltas encima mio cada vez más duro ,pero tranquila pronto pasará todo eso que alguna vez pensantes o "soñaste" quien sabe si habrá sido algún sueño o que WUSJAJAJA pero enserio al ver tu cuerpo muy aparte de querer darte como cajón q no cierra y hacerte todas las cosas que alguna vez te eh dicho que obviamente no me eh olvidado ninguna ,siento que ese cuerpo tan hermoso que tienes es lo que quiero cuidar y que nadie más lo mire solo yo y tú me gustas como eres y pronto tendrás mi descendientes dentro de ti bb ,así que cuídame ese poto hasta cuando vaya a chile a comertelo y llenartelo mientras te digo lo rico q hueles y lo sexy que eres cuando me envías fotos desnuda con su censura pero se q lo estás como me dejas todo provocado y te desapareces tramposilla tu me debes varias y me voy a desquitar con cada metida que te haré muak,la música espero que encaje bien con los momentos jsjwjajaa lo escribía mientras lo escuchaba, ahora sí te amo bb espero ver esas respuestas,feliz cumpleaños mi mami🩷</p>
+        <button class="back-button">Cerrar</button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
